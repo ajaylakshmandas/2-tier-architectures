@@ -1,0 +1,11 @@
+VPC: 10.0.0.0/16
+Public Subnet: 10.0.1.0/24
+Private Subnet: 10.0.2.0/24
+Internet Gateway: Attached to MyVPC
+NAT Gateway: Created in PublicSubnet with an Elastic IP
+Route Tables:
+Public Route Table: Routes internet traffic through the Internet Gateway
+Private Route Table: Routes internet traffic through the NAT Gateway
+Route Table Associations:
+Public Subnet: Associated with Public Route Table
+Private Subnet: Associated with Private Route Table
